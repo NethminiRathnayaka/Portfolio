@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nethmini Rathnayaka | Software Engineer & Vocalist</title>
+  <meta name="description" content="Official Portfolio of Nethmini Sandunika Rathnayaka - Software Engineer, QA Specialist, IT Graduate & Performing Vocalist.">
+  <meta name="keywords" content="Nethmini Rathnayaka, Sandunika Rathnayaka, Software Engineer, Singer, Vocalist, QA Engineer, Sri Lanka, Portfolio">
+  <meta name="author" content="Nethmini Sandunika Rathnayaka">
+
+  <!-- Open Graph for LinkedIn & Social Sharing -->
+  <meta property="og:title" content="Nethmini Rathnayaka | Software Engineer & Vocalist">
+  <meta property="og:description" content="Discover my journey in Software Engineering, QA Analysis, and Music. Explore tech projects, research publications, and musical tracks.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rmsnethminirathnayaka.github.io/portfolio">
+  <meta property="og:image" content="https://rmsnethminirathnayaka.github.io/portfolio/assets/images/profile_grad.jpg">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-brand">
+        <span class="brand-dot"></span>
+        Nethmini Rathnayaka
+      </a>
+
+      <!-- Persona Toggle -->
+      <div class="persona-toggle-container">
+        <button id="persona-tech-btn" class="persona-btn active tech" aria-label="Switch to Tech Persona">
+          <i class="fa-solid fa-code"></i> Tech Mode
+        </button>
+        <button id="persona-singer-btn" class="persona-btn singer" aria-label="Switch to Singer Persona">
+          <i class="fa-solid fa-microphone-lines"></i> Vocalist
+        </button>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#music" class="nav-link">Music & Tracks</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="#contact" class="nav-cta">
+            <i class="fa-solid fa-paper-plane"></i> Let's Talk
+          </a>
+        </li>
+      </ul>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div id="hero-persona-badge" class="badge-pill">
+          <i class="fa-solid fa-code"></i> Software Engineering & QA Specialist
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span style="color: #fff;">Nethmini</span> <br>
+          <span id="hero-persona-role" class="gradient-text-tech">Software Engineer & Vocalist</span>
+        </h1>
+        <p id="hero-persona-desc" class="hero-desc">
+          Honors Graduate in Information Technology (ESU/ESOFT) specializing in Software Engineering, QA Testing, and enterprise system coordination. By day I architect and test software solutions — by heart, I create acoustic resonance and sing melodies.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" id="hero-primary-action" class="btn btn-primary">
+            <i class="fa-solid fa-laptop-code"></i> Explore Projects
+          </a>
+          <a href="#music" class="btn btn-outline">
+            <i class="fa-solid fa-headphones"></i> Listen to Music
+          </a>
+          <a href="https://github.com/RMSNethminiRathnayaka" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3);">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/sandunikanethmini-184367214" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="border-color: #0077b5;">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>3.08</h3>
+            <p>BIT (Hons) GPA</p>
+          </div>
+          <div class="stat-item">
+            <h3>95%+</h3>
+            <p>User SLA Compliance</p>
+          </div>
+          <div class="stat-item">
+            <h3>2+</h3>
+            <p>Research Papers</p>
+          </div>
+          <div class="stat-item">
+            <h3>Dual</h3>
+            <p>Tech & Music Talent</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual -->
+      <div class="hero-visual">
+        <div class="profile-card-wrapper">
+          <div class="profile-card-glow"></div>
+          <div class="glass-panel profile-card">
+            <!-- Nethmini Real Graduation & Tech Portrait -->
+            <img src="assets/images/profile_grad.jpg" alt="Nethmini Rathnayaka" class="profile-image" id="profile-img">
+            <div class="profile-overlay">
+              <div>
+                <h4 style="font-size: 1.15rem; font-weight: 700; color: #fff;">Nethmini Rathnayaka</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Sri Lanka</p>
+              </div>
+              <span style="font-size: 0.8rem; padding: 0.25rem 0.75rem; border-radius: 20px; background: rgba(0, 242, 254, 0.2); color: var(--tech-accent); border: 1px solid var(--tech-accent);">
+                Open for Work
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section-padding" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: var(--tech-accent);">Behind the Code & The Mic</span>
+        <h2 class="section-title">The Symphony of Logic & Creativity</h2>
+        <p class="section-description">
+          Bridging precise algorithmic thinking with the soulful emotion of musical performance.
+        </p>
+      </div>
+
+      <div class="glass-panel" style="padding: 2.5rem; max-width: 960px; margin: 0 auto;">
+        <p style="font-size: 1.05rem; line-height: 1.8; color: #d1d5db; margin-bottom: 1.5rem;">
+          I am <strong>Rathnayaka Mudiyanselage Sandunika Nethmini Rathnayaka</strong>, a multidisciplinary professional with a Bachelor of Information Technology (Honors) specializing in <strong>Software Engineering</strong> from ESOFT Metro Campus (ESU). My technical journey encompasses full-stack web engineering, software quality assurance (SDLC & STLC), database design, and ERP application coordination.
+        </p>
+        <p style="font-size: 1.05rem; line-height: 1.8; color: #d1d5db; margin-bottom: 1.5rem;">
+          Beyond technology, I am a trained <strong>vocalist and stage performer</strong> whose musical journey began in childhood. After studying music with distinction (A Grade) in G.C.E. O/L, in 2023 I joined the renowned <strong>UMS (Umara Music Academy)</strong> and graduated as a vocalist and stage performer with a prestigious <strong>Distinction Class</strong>. 
+        </p>
+        <p style="font-size: 1.05rem; line-height: 1.8; color: #d1d5db; margin-bottom: 1.5rem;">
+          To deepen my classical vocal mastery, I advanced my vocal training with the <strong>Maheshika Sanamali Music Academy</strong> and entered the prestigious <strong>Visharada</strong> musical qualification. Having successfully completed <strong>Visharada Prathama</strong>, I am currently facing the <strong>Diploma Level</strong> this year, progressing towards achieving full <strong>Sangeeth Visharada</strong> credentials.
+        </p>
+        <p style="font-size: 1.05rem; line-height: 1.8; color: #d1d5db; margin-bottom: 1.5rem;">
+          These two worlds harmonize seamlessly in my research: I have published academic studies on <em>“CeleVibe – A Collaborative Platform for Artists to Interact with Fans”</em> at the 2nd BIIRC 2024 International Conference and am currently investigating <em>“The Impact of Identity Theft on Artist Profiles on Facebook”</em>.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; border-top: 1px solid var(--border-glass); padding-top: 1.5rem;">
+          <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">
+            <i class="fa-solid fa-location-dot" style="color: var(--tech-accent);"></i> Sri Lanka
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">
+            <i class="fa-solid fa-graduation-cap" style="color: var(--tech-accent);"></i> B.Sc. IT (Hons) Software Engineering
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">
+            <i class="fa-solid fa-award" style="color: #ec4899;"></i> UMS Distinction Graduate (Vocal & Stage)
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">
+            <i class="fa-solid fa-music" style="color: #a855f7;"></i> Visharada Candidate (Diploma Level)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Music & Vocal Showcase Section -->
+  <section class="section-padding" id="music" style="background: rgba(236, 72, 153, 0.02);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: #ec4899;">Musical Artistry</span>
+        <h2 class="section-title">Original Songs, Covers & Melodies</h2>
+        <p class="section-description">
+          A showcase of my vocal performances, original singles, and music recordings. Replace with your exact links & tracks anytime!
+        </p>
+      </div>
+
+      <!-- Vocalist Journey & Credentials Milestone Cards -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-bottom: 3.5rem;">
+        <!-- Card 1: Childhood & O/L Music -->
+        <div class="glass-panel" style="padding: 1.5rem; border-left: 4px solid #ec4899;">
+          <div style="font-size: 0.8rem; font-weight: 700; color: #ec4899; text-transform: uppercase; margin-bottom: 0.4rem;">Early Passion · G.C.E. O/L</div>
+          <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.4rem; color: #fff;">Distinction 'A' in Music</h4>
+          <p style="font-size: 0.86rem; color: var(--text-muted); line-height: 1.6;">
+            Discovered my singing gift at a young age, mastering foundational vocal theory and earning a Distinction (A) in School Music.
+          </p>
+        </div>
+
+        <!-- Card 2: UMS Graduation -->
+        <div class="glass-panel" style="padding: 1.5rem; border-left: 4px solid #f43f5e;">
+          <div style="font-size: 0.8rem; font-weight: 700; color: #f43f5e; text-transform: uppercase; margin-bottom: 0.4rem;">2023 · UMS Academy</div>
+          <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.4rem; color: #fff;">Umara Music Academy Graduate</h4>
+          <p style="font-size: 0.86rem; color: var(--text-muted); line-height: 1.6;">
+            Graduated with a <strong>Distinction Class</strong> as a trained Vocalist & Stage Performer, mastering stage presence and vocal dynamics.
+          </p>
+        </div>
+
+        <!-- Card 3: Maheshika Sanamali Academy -->
+        <div class="glass-panel" style="padding: 1.5rem; border-left: 4px solid #a855f7;">
+          <div style="font-size: 0.8rem; font-weight: 700; color: #a855f7; text-transform: uppercase; margin-bottom: 0.4rem;">Professional Vocal Coaching</div>
+          <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.4rem; color: #fff;">Maheshika Sanamali Music Academy</h4>
+          <p style="font-size: 0.86rem; color: var(--text-muted); line-height: 1.6;">
+            Advanced vocal training honing pitch control, breath modulation, classical ragas, and contemporary vocal performance.
+          </p>
+        </div>
+
+        <!-- Card 4: Visharada Journey -->
+        <div class="glass-panel" style="padding: 1.5rem; border-left: 4px solid var(--gold-accent);">
+          <div style="font-size: 0.8rem; font-weight: 700; color: var(--gold-accent); text-transform: uppercase; margin-bottom: 0.4rem;">Current · Classical Honors</div>
+          <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.4rem; color: #fff;">Visharada (Diploma Level)</h4>
+          <p style="font-size: 0.86rem; color: var(--text-muted); line-height: 1.6;">
+            Completed <strong>Visharada Prathama</strong>; currently facing the <strong>Diploma Level</strong> on the pathway to becoming a certified <strong>Sangeeth Visharada</strong>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="tabs-filter">
+        <button class="filter-tab active" data-filter="all">All Releases</button>
+        <button class="filter-tab" data-filter="original">Originals</button>
+        <button class="filter-tab" data-filter="covers">Acoustic & Covers</button>
+        <button class="filter-tab" data-filter="videos">Videos & Live</button>
+      </div>
+
+      <div class="music-grid">
+        <!-- Track 1: Original Song Concept -->
+        <div class="glass-panel audio-card" data-category="original">
+          <div class="audio-meta">
+            <div class="audio-cover" style="overflow: hidden; padding: 0;">
+              <img src="assets/images/vocal_pose.jpg" alt="Vocal Cover" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="audio-info">
+              <h4>Original Song Releases</h4>
+              <p>Vocals & Melody by Nethmini</p>
+            </div>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+            A soulful track blending emotional lyricism with contemporary acoustic orchestration.
+          </p>
+          <audio controls class="audio-player-custom">
+            <source src="assets/audio/sample-track1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <!-- Track 2: UMS Graduation & Live Stage -->
+        <div class="glass-panel audio-card" data-category="covers">
+          <div class="audio-meta">
+            <div class="audio-cover" style="overflow: hidden; padding: 0;">
+              <img src="assets/images/umara_grad.jpg" alt="UMS Graduation" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="audio-info">
+              <h4>UMS Live & Acoustic Sessions</h4>
+              <p>Stage & Vocal Dynamics</p>
+            </div>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+            Live vocal demonstrations, acoustic harmonies, and stage showcases from Umara Music Academy.
+          </p>
+          <audio controls class="audio-player-custom">
+            <source src="assets/audio/sample-track2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <!-- Video 1: YouTube Channel Connect -->
+        <div class="glass-panel video-card" data-category="videos">
+          <div style="position: relative; height: 190px; overflow: hidden; background: #000;">
+            <img src="assets/images/stage_live.jpg" alt="Live Concert Stage" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.85;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11, 15, 25, 0.95), transparent); display: flex; align-items: center; justify-content: center;">
+              <a href="https://youtube.com/@sandunikanethmini?si=2fSLP9mkntNX-X_C" target="_blank" class="btn btn-music" style="padding: 0.6rem 1.4rem;">
+                <i class="fa-brands fa-youtube"></i> Visit YouTube Channel
+              </a>
+            </div>
+          </div>
+          <div class="video-card-content">
+            <span class="project-type-tag" style="background: rgba(236, 72, 153, 0.15); color: #f43f5e;">Live Stage & Videos</span>
+            <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.4rem;">@sandunikanethmini</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.8rem;">
+              Watch full performance sets, live stage duets, and acoustic visualizers on my official YouTube channel.
+            </p>
+            <div style="display: flex; gap: 0.8rem;">
+              <a href="https://www.tiktok.com/@sadunikanethminiofficial?_r=1&_t=ZS-9AVvai1Yb5z" target="_blank" style="color: #ff0050; font-size: 0.85rem; font-weight: 600; text-decoration: none;">
+                <i class="fa-brands fa-tiktok"></i> TikTok Clips
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100080026676929" target="_blank" style="color: #4facfe; font-size: 0.85rem; font-weight: 600; text-decoration: none;">
+                <i class="fa-brands fa-facebook"></i> Facebook Page
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage & Performance Moments Gallery -->
+      <div style="margin-top: 3.5rem;">
+        <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 1.25rem; color: #fff; display: flex; align-items: center; gap: 0.6rem;">
+          <i class="fa-solid fa-camera" style="color: #ec4899;"></i> Stage & Performance Moments
+        </h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem;">
+          <div class="glass-panel" style="overflow: hidden; border-radius: 16px;">
+            <img src="assets/images/stage_live.jpg" alt="Concert Stage Performance" style="width: 100%; height: 180px; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <div style="padding: 0.8rem;">
+              <div style="font-size: 0.85rem; font-weight: 700; color: #fff;">Live Stage Concert</div>
+              <div style="font-size: 0.75rem; color: var(--text-dim);">Vocal Duet & Band Accompaniment</div>
+            </div>
+          </div>
+
+          <div class="glass-panel" style="overflow: hidden; border-radius: 16px;">
+            <img src="assets/images/umara_grad.jpg" alt="UMS Graduation" style="width: 100%; height: 180px; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <div style="padding: 0.8rem;">
+              <div style="font-size: 0.85rem; font-weight: 700; color: #fff;">UMS Convocation</div>
+              <div style="font-size: 0.75rem; color: var(--text-dim);">Graduation with Distinction Class</div>
+            </div>
+          </div>
+
+          <div class="glass-panel" style="overflow: hidden; border-radius: 16px;">
+            <img src="assets/images/open_mic.jpg" alt="Open Mic 2024" style="width: 100%; height: 180px; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <div style="padding: 0.8rem;">
+              <div style="font-size: 0.85rem; font-weight: 700; color: #fff;">Open Mic 2024</div>
+              <div style="font-size: 0.75rem; color: var(--text-dim);">Live Stage Performance Session</div>
+            </div>
+          </div>
+
+          <div class="glass-panel" style="overflow: hidden; border-radius: 16px;">
+            <img src="assets/images/vocal_hero.jpg" alt="Aesthetic Artistic Shoot" style="width: 100%; height: 180px; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <div style="padding: 0.8rem;">
+              <div style="font-size: 0.85rem; font-weight: 700; color: #fff;">Melodic Resonance</div>
+              <div style="font-size: 0.75rem; color: var(--text-dim);">Outdoor Concept & Music Visuals</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects & Research Section -->
+  <section class="section-padding" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: var(--tech-accent);">Technical Portfolio</span>
+        <h2 class="section-title">Software Engineering & Academic Work</h2>
+        <p class="section-description">
+          Engineered solutions, published IEEE-level papers, and full-stack systems built with best practices.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: CeleVibe Research & System -->
+        <div class="glass-panel project-card">
+          <div>
+            <span class="project-type-tag tag-research">Published Research · 2nd BIIRC 2024</span>
+            <h3 class="project-title">CeleVibe – Collaborative Platform for Artists & Fans</h3>
+            <p class="project-desc">
+              Authored and presented academic research on an interactive digital ecosystem that bridges musicians and their audiences. Designed communication protocols and interactive engagement channels.
+            </p>
+            <div class="tech-stack-list">
+              <span class="tech-pill">Research Methodology</span>
+              <span class="tech-pill">System Architecture</span>
+              <span class="tech-pill">Artist-Fan Interaction</span>
+              <span class="tech-pill">IEEE BIIRC</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://www.linkedin.com/in/sandunikanethmini-184367214" target="_blank" class="project-link-btn">
+              View Publication <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Identity Theft Research -->
+        <div class="glass-panel project-card">
+          <div>
+            <span class="project-type-tag tag-research">Cybersecurity & Artist Safety · 2025</span>
+            <h3 class="project-title">Impact of Identity Theft on Artist Profiles on Facebook</h3>
+            <p class="project-desc">
+              Investigating the vulnerability vectors, impersonation attacks, and digital trust degradation experienced by creators and performing artists on social media platforms.
+            </p>
+            <div class="tech-stack-list">
+              <span class="tech-pill">Cybersecurity</span>
+              <span class="tech-pill">Data Privacy</span>
+              <span class="tech-pill">Digital Forensics</span>
+              <span class="tech-pill">SPSS Analytics</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#contact" class="project-link-btn">
+              Inquire Research <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Hotel Management System -->
+        <div class="glass-panel project-card">
+          <div>
+            <span class="project-type-tag tag-tech">Desktop Software & Database</span>
+            <h3 class="project-title">Hotel Management System (HMS)</h3>
+            <p class="project-desc">
+              Developed comprehensive reservation logic, guest records handling, and billing modules with role-based access control (Admin, Receptionist, Guest).
+            </p>
+            <div class="tech-stack-list">
+              <span class="tech-pill">C#</span>
+              <span class="tech-pill">.NET</span>
+              <span class="tech-pill">MS SQL Server</span>
+              <span class="tech-pill">Role Security</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com" target="_blank" class="project-link-btn">
+              Source Code <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: Blood Donation System -->
+        <div class="glass-panel project-card">
+          <div>
+            <span class="project-type-tag tag-tech">Web Platform & QA Testing</span>
+            <h3 class="project-title">Blood Donation Life-Saving Portal</h3>
+            <p class="project-desc">
+              Conducted end-to-end manual testing, test case design, and defect management ensuring flawless donor registration and emergency blood requisition workflows.
+            </p>
+            <div class="tech-stack-list">
+              <span class="tech-pill">QA Testing</span>
+              <span class="tech-pill">STLC</span>
+              <span class="tech-pill">Test Cases</span>
+              <span class="tech-pill">HTML/CSS/JS</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com" target="_blank" class="project-link-btn">
+              Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5: ACTIVE+ Fitness UI/UX -->
+        <div class="glass-panel project-card">
+          <div>
+            <span class="project-type-tag tag-tech">UI/UX Prototype</span>
+            <h3 class="project-title">ACTIVE+ Fitness App</h3>
+            <p class="project-desc">
+              Engineered user-centric mobile application prototypes in Figma with goal tracking, personalized workout regimes, interactive analytics, and high-fidelity wireframing.
+            </p>
+            <div class="tech-stack-list">
+              <span class="tech-pill">Figma</span>
+              <span class="tech-pill">Prototyping</span>
+              <span class="tech-pill">User Research</span>
+              <span class="tech-pill">UI/UX</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://figma.com" target="_blank" class="project-link-btn">
+              Figma Showcase <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 6: Ventures Internal System (VIS) QA -->
+        <div class="glass-panel project-card">
+          <div>
+            <span class="project-type-tag tag-tech">Enterprise QA Testing</span>
+            <h3 class="project-title">Ventures Internal System (VIS)</h3>
+            <p class="project-desc">
+              Performed manual and automated regression testing for internal enterprise modules. Developed comprehensive test plans and documented defect lifecycle in Agile sprints.
+            </p>
+            <div class="tech-stack-list">
+              <span class="tech-pill">Defect Tracking</span>
+              <span class="tech-pill">Regression Testing</span>
+              <span class="tech-pill">Agile / Scrum</span>
+              <span class="tech-pill">SQL Verification</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#contact" class="project-link-btn">
+              QA Documentation <i class="fa-solid fa-file-lines"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Matrix -->
+  <section class="section-padding" id="skills" style="background: rgba(0, 242, 254, 0.02);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: var(--tech-accent);">Expertise & Proficiencies</span>
+        <h2 class="section-title">Skills & Capabilities</h2>
+        <p class="section-description">
+          A blend of engineering precision, quality assurance methodologies, and creative artistry.
+        </p>
+      </div>
+
+      <div class="skills-container">
+        <!-- Programming & Web -->
+        <div class="glass-panel skill-box">
+          <div class="skill-box-title" style="color: var(--tech-accent);">
+            <i class="fa-solid fa-code"></i> Programming & Web
+          </div>
+          <div class="skill-tags">
+            <span class="skill-bubble"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
+            <span class="skill-bubble"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="skill-bubble"><i class="fa-brands fa-php"></i> PHP</span>
+            <span class="skill-bubble"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-bubble"><i class="fa-brands fa-java"></i> Java</span>
+            <span class="skill-bubble"><i class="fa-solid fa-code"></i> C# (.NET)</span>
+          </div>
+        </div>
+
+        <!-- Testing & QA -->
+        <div class="glass-panel skill-box">
+          <div class="skill-box-title" style="color: #60a5fa;">
+            <i class="fa-solid fa-vial-circle-check"></i> Quality Assurance & Support
+          </div>
+          <div class="skill-tags">
+            <span class="skill-bubble"><i class="fa-solid fa-check-double"></i> Manual Testing</span>
+            <span class="skill-bubble"><i class="fa-solid fa-clipboard-list"></i> Test Planning & Design</span>
+            <span class="skill-bubble"><i class="fa-solid fa-bug"></i> Defect Tracking</span>
+            <span class="skill-bubble"><i class="fa-solid fa-arrows-rotate"></i> SDLC & STLC</span>
+            <span class="skill-bubble"><i class="fa-solid fa-users-gear"></i> Agile & Scrum</span>
+            <span class="skill-bubble"><i class="fa-solid fa-headset"></i> L2 / L3 ERP Support</span>
+          </div>
+        </div>
+
+        <!-- Databases & Tools -->
+        <div class="glass-panel skill-box">
+          <div class="skill-box-title" style="color: var(--gold-accent);">
+            <i class="fa-solid fa-database"></i> Databases & Tools
+          </div>
+          <div class="skill-tags">
+            <span class="skill-bubble"><i class="fa-solid fa-database"></i> Microsoft SQL Server</span>
+            <span class="skill-bubble"><i class="fa-solid fa-database"></i> MySQL & NoSQL</span>
+            <span class="skill-bubble"><i class="fa-brands fa-figma"></i> Figma (UI/UX)</span>
+            <span class="skill-bubble"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+            <span class="skill-bubble"><i class="fa-solid fa-server"></i> XAMPP & VS Code</span>
+            <span class="skill-bubble"><i class="fa-solid fa-chart-pie"></i> IBM SPSS</span>
+          </div>
+        </div>
+
+        <!-- Creative & Vocal Talents -->
+        <div class="glass-panel skill-box">
+          <div class="skill-box-title" style="color: #ec4899;">
+            <i class="fa-solid fa-music"></i> Vocal & Creative Arts
+          </div>
+          <div class="skill-tags">
+            <span class="skill-bubble"><i class="fa-solid fa-microphone-lines"></i> Stage Performance (UMS Distinction)</span>
+            <span class="skill-bubble"><i class="fa-solid fa-music"></i> Sangeeth Visharada (Classical)</span>
+            <span class="skill-bubble"><i class="fa-solid fa-graduation-cap"></i> Visharada Prathama & Diploma</span>
+            <span class="skill-bubble"><i class="fa-solid fa-headphones"></i> Vocal Dynamics & Breath Control</span>
+            <span class="skill-bubble"><i class="fa-solid fa-compact-disc"></i> Original Songs & Melodies</span>
+            <span class="skill-bubble"><i class="fa-solid fa-guitar"></i> Acoustic & Studio Recording</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience & Education Timeline -->
+  <section class="section-padding" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: var(--tech-accent);">Career Journey</span>
+        <h2 class="section-title">Experience & Education</h2>
+        <p class="section-description">
+          A track record of high SLA performance, campus coordination, and academic excellence.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2026 March – 2026 August</div>
+          <h3 class="timeline-title">Operation Officer</h3>
+          <div class="timeline-org">Modern Mark Development (Pvt) Ltd · Union Place, Sri Lanka</div>
+          <ul class="timeline-bullets">
+            <li>Managed daily system operations handling accounting workflows and financial transaction reconciliation.</li>
+            <li>Maintained rigorous data accuracy and streamlined administrative coordination.</li>
+          </ul>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025 August – 2026 January</div>
+          <h3 class="timeline-title">Pearson and DLC Program Coordinator (Lead Application Support)</h3>
+          <div class="timeline-org">Polymath Campus · Maharagama, Sri Lanka</div>
+          <ul class="timeline-bullets">
+            <li>Delivered high-tier application support for 500+ students and staff, maintaining 95%+ SLA satisfaction.</li>
+            <li>Conducted Level 2/3 ERP support, bug logging, and user acceptance testing (UAT) for LMS deployments.</li>
+            <li>Created comprehensive step-by-step SOPs and guides that reduced repetitive support tickets by 25%.</li>
+            <li>Served as key liaison between faculty, students, and Pearson awarding body.</li>
+          </ul>
+        </div>
+
+        <!-- Item 3: Degree -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2021 – 2025</div>
+          <h3 class="timeline-title">Bachelor of Information Technology (Honors)</h3>
+          <div class="timeline-org">ESOFT Metro Campus (ESU) · Bambalapitiya, Sri Lanka</div>
+          <ul class="timeline-bullets">
+            <li>Specialized in Software Engineering — GPA 3.08 (Second Class Honours).</li>
+            <li>Core coursework in Object-Oriented Programming, Database Systems, Software Architecture, STLC/SDLC, and Information Security.</li>
+          </ul>
+        </div>
+
+        <!-- Item 4: Visharada Qualification -->
+        <div class="timeline-item music-dot">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Current Journey · 2026 - Present</div>
+          <h3 class="timeline-title">Visharada Candidate (Facing Diploma Level)</h3>
+          <div class="timeline-org">Bhatkhande Sangeet Vidyapith / Classical Vocal Curriculum</div>
+          <ul class="timeline-bullets">
+            <li>Successfully completed <strong>Visharada Prathama</strong> with rigorous vocal examination.</li>
+            <li>Currently preparing and facing the <strong>Diploma Level</strong> examination this year, on track to achieve full <strong>Sangeeth Visharada</strong> title in 2 years.</li>
+          </ul>
+        </div>
+
+        <!-- Item 5: Maheshika Sanamali Music Academy -->
+        <div class="timeline-item music-dot">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Advanced Vocal Training</div>
+          <h3 class="timeline-title">Vocalist & Classical Training</h3>
+          <div class="timeline-org">Maheshika Sanamali Music Academy</div>
+          <ul class="timeline-bullets">
+            <li>Completed specialized vocal lessons focused on breath modulation, pitch stability, and intricate vocal ornaments.</li>
+            <li>Bridged traditional classical ragas with versatile modern performance techniques.</li>
+          </ul>
+        </div>
+
+        <!-- Item 6: Umara Music Academy (UMS) -->
+        <div class="timeline-item music-dot">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023</div>
+          <h3 class="timeline-title">Graduated Vocalist & Stage Performer (Distinction Class)</h3>
+          <div class="timeline-org">UMS – Umara Music Academy</div>
+          <ul class="timeline-bullets">
+            <li>Completed prestigious vocal coaching under artist Umara Sinhawansa, graduating with <strong>Distinction honors</strong>.</li>
+            <li>Trained extensively in microphone technique, stage presence, dynamic vocal range, and live show delivery.</li>
+          </ul>
+        </div>
+
+        <!-- Item 7: School Music Distinction -->
+        <div class="timeline-item music-dot">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Early Musical Foundations</div>
+          <h3 class="timeline-title">G.C.E. O/L Music Distinction ('A' Grade)</h3>
+          <div class="timeline-org">PL / Girithale Gama National College</div>
+          <ul class="timeline-bullets">
+            <li>Studied music as a core aesthetic subject from childhood, achieving the highest Distinction Grade ('A').</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Booking Section -->
+  <section class="section-padding" id="contact" style="background: rgba(11, 15, 25, 0.7);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: var(--tech-accent);">Get In Touch</span>
+        <h2 class="section-title">Let's Collaborate</h2>
+        <p class="section-description">
+          Whether you're looking for an experienced Software Engineer / QA Analyst or booking vocal performances and collaborations, I'd love to connect!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information -->
+        <div class="glass-panel contact-info-card">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem; color: #fff;">Contact Details</h3>
+
+          <div class="contact-detail-item">
+            <div class="contact-icon-box">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-dim);">Direct Email</div>
+              <a href="mailto:nethminirathnayaka1@gmail.com" style="color: #fff; text-decoration: none; font-weight: 600;">
+                nethminirathnayaka1@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-detail-item">
+            <div class="contact-icon-box">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-dim);">Mobile & WhatsApp</div>
+              <a href="tel:0094776963314" style="color: #fff; text-decoration: none; font-weight: 600;">
+                0094776963314
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-detail-item">
+            <div class="contact-icon-box">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-dim);">Location</div>
+              <span style="color: #fff; font-weight: 600;">Sri Lanka</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem;">
+              <span style="font-size: 0.85rem; font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: 1px;">
+                <i class="fa-solid fa-satellite-dish" style="color: var(--tech-accent); margin-right: 0.4rem;"></i> Connect Channels
+              </span>
+              <span style="font-size: 0.72rem; color: var(--tech-accent); background: rgba(0, 242, 254, 0.1); padding: 2px 8px; border-radius: 12px; border: 1px solid rgba(0, 242, 254, 0.3);">
+                Official Links
+              </span>
+            </div>
+
+            <!-- Creative Social Media Cards Hub -->
+            <div class="social-hub-grid">
+              <!-- GitHub -->
+              <a href="https://github.com/RMSNethminiRathnayaka" target="_blank" class="social-hub-card social-github" title="Visit GitHub Profile">
+                <div class="social-hub-icon">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="social-hub-info">
+                  <span class="social-hub-name">GitHub</span>
+                  <span class="social-hub-handle">@RMSNethmini...</span>
+                </div>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/sandunikanethmini-184367214" target="_blank" class="social-hub-card social-linkedin" title="Connect on LinkedIn">
+                <div class="social-hub-icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="social-hub-info">
+                  <span class="social-hub-name">LinkedIn</span>
+                  <span class="social-hub-handle">sandunikanethmini</span>
+                </div>
+              </a>
+
+              <!-- YouTube -->
+              <a href="https://youtube.com/@sandunikanethmini?si=2fSLP9mkntNX-X_C" target="_blank" class="social-hub-card social-youtube" title="Subscribe on YouTube">
+                <div class="social-hub-icon">
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="social-hub-info">
+                  <span class="social-hub-name">YouTube</span>
+                  <span class="social-hub-handle">@sandunikanethmini</span>
+                </div>
+              </a>
+
+              <!-- TikTok Official -->
+              <a href="https://www.tiktok.com/@sadunikanethminiofficial?_r=1&_t=ZS-9AVvai1Yb5z" target="_blank" class="social-hub-card social-tiktok-official" title="Follow TikTok Official">
+                <div class="social-hub-icon">
+                  <i class="fa-brands fa-tiktok"></i>
+                </div>
+                <div class="social-hub-info">
+                  <span class="social-hub-name">TikTok</span>
+                  <span class="social-hub-handle">@sadunikanethmini</span>
+                </div>
+              </a>
+
+              <!-- TikTok Personal -->
+              <a href="https://www.tiktok.com/@nethmini.rathnayaka?_r=1&_t=ZS-9AVvXtjJFmJ" target="_blank" class="social-hub-card social-tiktok-personal" title="Follow TikTok Personal">
+                <div class="social-hub-icon">
+                  <i class="fa-brands fa-tiktok"></i>
+                </div>
+                <div class="social-hub-info">
+                  <span class="social-hub-name">TikTok (Art)</span>
+                  <span class="social-hub-handle">@nethmini.rathnayaka</span>
+                </div>
+              </a>
+
+              <!-- Facebook Page -->
+              <a href="https://www.facebook.com/profile.php?id=100080026676929" target="_blank" class="social-hub-card social-fbpage" title="Like Facebook Page">
+                <div class="social-hub-icon">
+                  <i class="fa-solid fa-flag"></i>
+                </div>
+                <div class="social-hub-info">
+                  <span class="social-hub-name">FB Artist Page</span>
+                  <span class="social-hub-handle">Sandunika Nethmini</span>
+                </div>
+              </a>
+
+              <!-- Facebook Profile -->
+              <a href="https://www.facebook.com/share/19a643t2No/" target="_blank" class="social-hub-card social-fb" title="Facebook Profile">
+                <div class="social-hub-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="social-hub-info">
+                  <span class="social-hub-name">Facebook</span>
+                  <span class="social-hub-handle">Personal Profile</span>
+                </div>
+              </a>
+
+              <!-- WhatsApp Chat -->
+              <a href="https://wa.me/94776963314" target="_blank" class="social-hub-card social-whatsapp" title="Chat on WhatsApp">
+                <div class="social-hub-icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="social-hub-info">
+                  <span class="social-hub-name">WhatsApp</span>
+                  <span class="social-hub-handle">Direct Message</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="glass-panel contact-form">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem; color: #fff;">Send a Direct Message</h3>
+
+          <div id="form-success-alert" style="display: none; padding: 1rem; border-radius: 12px; background: rgba(16, 185, 129, 0.2); border: 1px solid #10b981; color: #34d399; margin-bottom: 1rem;">
+            <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent successfully.
+          </div>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="inquiry-type" class="form-label">Inquiry Purpose</label>
+              <select id="inquiry-type" class="form-input" style="background-color: #111827;">
+                <option value="tech">Software Engineering / QA Role</option>
+                <option value="music">Music Collaboration / Vocal Booking</option>
+                <option value="consulting">Research & Consulting</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" rows="4" class="form-textarea" placeholder="Tell me about your opportunity or musical project..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Nethmini Sandunika Rathnayaka. All rights reserved.</p>
+      <p style="margin-top: 0.35rem; font-size: 0.8rem; color: var(--text-dim);">
+        Engineered with precision · Powered by music · Ready for GitHub Pages & LinkedIn
+      </p>
+    </div>
+  </footer>
+
+  <!-- Custom Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
